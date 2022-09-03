@@ -1,0 +1,56 @@
+Id,Description,labels
+0,Bow area from dead ahead.,Core
+1,Hull forward end starboard side.,Core
+2,Hull forward end port side.,Core
+3,Hull aft end starboard side.,Core
+4,Hull aft end port side.,Core
+5,Transom from right astern.,Core
+6,Forecastle port side looking towards fairleads.,Core
+7,Forecastle starboard side looking towards fairleads.,Core
+8,Port or starboard windlass.,Core
+9,Forward main deck showing condition of deck (and external framing).,Core
+10,Forward main deck showing condition of pipe-rack.,Core
+11,One mooring winch showing brake setting arrangement.,Core
+12,One hose crane overall view.,Core
+13,One hose crane showing hoisting winch stowed wire and limit switches.,Core
+14,Starboard manifold looking from aft to forward.,Core
+15,Starboard manifold looking forward to aft.,Core
+16,Aft main deck showing condition of deck (and external framing).,Core
+17,Aft main deck showing condition of Piperack.,Core
+18,Poop deck looking from midships to starboard including fairleads.,Core
+19,Aft emergency towing equipment storage arrangement.,Core
+20,Aft emergency towing equipment deployment system.,Core
+21,Lifeboat and davit.,Core
+22,The emergency generator or accumulator batteries.,Core
+23,Engine room general view showing top of main engine.,Core
+24,One generator engine.,Core
+25,The oil filtering equipment.,Core
+26,The incinerator.,Core
+27,One boiler from the front.,Core
+28,One boiler from the top showing control equipment.,Core
+29,Purifier room general view.,Core
+30,Main engine side showing local control station.,Core
+31,Steering gear room general view showing access.,Core
+32,Main steering gear.,Core
+34,IG system pressure/vacuum-breaking (P/V) device.,Crude/product/shuttle/chemical tankers/OBO
+35,IG system first non-return device (deck seal or double block and bleed arrangement).,Crude/product/shuttle/chemical tankers/OBO
+36,One main cargo pump and if in pump room including bilges.,Crude/product/shuttle/chemical tankers/OBO
+38,A cargo tank liquid dome including load and discharge valve.,LPG pressurised
+39,Electric motors for deepwell pumps.,LPG pressurised
+40,Compressor/motor room internal view.,LPG pressurised
+41,LPG refrigerated.,LPG pressurised
+42,A cargo tank liquid dome including load and discharge valve.,LPG pressurised
+43,Electric motors for deepwell pumps.,LPG pressurised
+44,Compressor room internal view.,LPG pressurised
+46,A cargo tank liquid dome including load and discharge valve.,LNG Membrane type
+47,A cargo tank vapour dome including cargo system relief valves.,LNG Membrane type
+48,Compressor house internal view.,LNG Membrane type
+50,A cargo tank liquid dome including load and discharge valve.,LNG Moss type
+51,General view of one moss sphere.,LNG Moss type
+52,Compressor house internal view.,LNG Moss type
+54,Bow mooring arrangement from forward looking aft showing chain stopper.,Shuttle tanker
+55,Bow mooring arrangement from aft looking forward showing winch.,Shuttle tanker
+56,General view of hose connection area.,Shuttle tanker
+57,Hose coupling arrangement.,Shuttle tanker
+58,General view forward bow thruster room.,Shuttle tanker
+59,Forward bow thruster room showing one azimuth thruster.,Shuttle tanker

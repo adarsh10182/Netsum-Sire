@@ -1,0 +1,93 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'qstyle.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="body-div">
+      <div class="sidebar">
+        <div class="chapter"><span>SIRE Chapters</span></div>
+        <div class="chapter-div" id="2"><span>2. Certification and Documentation</span></div>
+        <div class="chapter-div" id="3"><span>3. Crew Management</span></div>
+        <div class="chapter-div" id="4"><span>4. Navigation and Communications</span></div>
+        <div class="chapter-div" id="5"><span>5. Safety Management</span></div>
+        <div class="chapter-div" id="6"><span>6. Pollution Prevention</span></div>
+        <div class="chapter-div" id="7"><span>7. Maritime Security</span></div>
+        <div class="chapter-div" id="8"><span>8. Cargo and Ballast Systems</span></div>
+        <div class="chapter-div" id="9"><span>9. Mooring and Anchoring</span></div>
+        <div class="chapter-div" id="10"><span>10. Manchinery Spaces</span></div>
+        <div class="chapter-div" id="12"><span>12. Ice Operations</span></div>
+      </div>
+      <div class="question-container" >
+      {% for question in questions %}
+        <div class="question-div">
+            <div class="top-bar">
+                <div class="q-code">{{question.Qno}}</div>
+                <div class="short-text">{{question.Stext}}</div>
+            </div>
+            <div class="middle-bar">
+                <span>{{question.Ftext}}</span>
+            </div>
+            <div class="bottom-bar">
+              {% if p_qtn %}
+                {% if question.PQtn == 'Graduated' %}
+                <div class="res">
+                <div class="res-d">Procedure Response</div>
+                <div class="res-dr"><input type="range" id="grad" min="0" max="3" step="1"></div>
+                <div class="res-dr"><span class="trans-text">Move slider..</span></div>
+                </div>
+                {% elif question.PQtn == 'Binary' %}
+                <div class="res">
+                <div class="res-d">Procedure Response</div>
+                <div class="res-dr"><input type="range" id="bin" min="0" max="1" step="1"></div>
+                <div class="res-dr"><span class="trans-text">Move slider..</span></div>
+                </div>
+                {% endif %}
+              {% endif %}
+              {% if h_qtn %}
+                {% if question.HQtn == 'Graduated' %}
+                <div class="res">
+                <div class="res-d">Hardware Response</div>
+                <div class="res-dr"><input type="range" id="grad" min="0" max="3" step="1"></div>
+                <div class="res-dr"><span class="trans-text">Move slider..</span></div>
+                </div>
+                {% elif question.HQtn == 'Binary' %}
+                <div class="res">
+                <div class="res-d">Hardware Response</div>
+                <div class="res-dr"><input type="range" id="bin" min="0" max="1" step="1"></div>
+                <div class="res-dr"><span class="trans-text">Move slider..</span></div>
+                </div>
+                {% endif %}
+              {% endif %}
+              {% if hu_qtn %}
+                {% if question.HuQtn == 'Graduated' %}
+                <div class="res">
+                <div class="res-d">Human Response</div>
+                <div class="res-dr"><input type="range" id="grad" min="0" max="3" step="1"></div>
+                <div class="res-dr"><span class="trans-text">Move slider..</span></div>
+                </div>
+                {% elif question.HuQtn == 'Binary' %}
+                <div class="res">
+                <div class="res-d">Human Response</div>
+                <div class="res-dr"><input type="range" id="bin" min="0" max="1" step="1"></div>
+                <div class="res-dr"><span class="trans-text">Move slider..</span></div>
+                </div>
+                {% endif %}
+              {% endif %}
+            </div>
+        </div>
+      {% endfor %}
+      </div>
+    </div>
+    <script src="{% static 'auditques.js' %}"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>

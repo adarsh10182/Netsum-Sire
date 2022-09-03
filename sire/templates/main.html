@@ -1,0 +1,85 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <script src="{% static 'javs.js' %}"></script>
+  </head>
+  <body>
+    <nav class="navbar fixed-top navbar-dark navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">NETSUM</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Summarizer</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Inspection</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Uploads</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <br>
+    <div class ="body-web">
+      <div class="title-bar">
+        <p class="title-text">PROGRAM NAME</p>
+      </div>
+      <div class="type-selector">
+        <form id="selection" style="display:flex;flex:1;flex-direction: column ;" action="ques.html" method="get">
+        <div style="display:flex; flex-direction:row;">
+          <div class="label-div" style="display:flex;flex:0.8;"><p class="select-text" style="font-size:16px;margin: 0;padding-top: 7px;padding-left: 3rem;">Select Vessel Type:</p></div> 
+          <div style="display:flex;flex:2;">
+            <select class="form-select" id="state" name="vessel">
+              <option value>Choose...</option>
+              <option>Chemical</option>
+              <option>LNG</option>
+              <option>LPG</option>
+              <option>Oil</option>
+            </select>
+          </div>
+        </div>
+        <div class="check-div">
+          <span>
+            Select Question Type: 
+          </span>
+          <div class="check-sub">
+            <input class="form-check-input" type="checkbox" value="1" id="Procedure" name="check1">
+            <label class="form-check-label" for="Procedure">
+              Procedure Questions
+            </label>
+          </div>
+          <div class="check-sub">
+            <input class="form-check-input" type="checkbox" value="1" id="Human" name="check2">
+            <label class="form-check-label" for="Human">
+              Human Questions
+            </label>
+          </div>
+          <div class="check-sub">
+              <input class="form-check-input" type="checkbox" value="1" id="Procedure" name="check3" checked>
+              <label class="form-check-label" for="Procedure">
+                Hardware Questions
+              </label>
+          </div>
+          <input type="hidden" name="chapter" value="2">
+        </div>
+        <div class="but-div"><button type="button" class="btn btn-primary" onclick="trig_form()" >Submit</button></div>
+        </form>
+      </div>
+   </div>
+  </body>
+</html>
